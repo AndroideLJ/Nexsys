@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "624dffc9-62e2-4cf9-9e94-ece7b139382d",
+		"name": "Nexsys",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19133194"
+	},
+	"item": [
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"xbox\",\r\n\"price\": 1000,\r\n\"description\": \"Xbox one slip\",\r\n\"categoryId\": 2,\r\n\"images\": [\"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mercadolibre.com.co%2Fmicrosoft-xbox-one-s-1tb-fortnite-color-blanco%2Fp%2FMCO15584869&psig=AOvVaw0T2GxTv0VYqE3p-Ylch6xz&ust=1682368379946000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKCN0t7swP4CFQAAAAAdAAAAABAF\"] \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Localhost:8080/nexsys/v1/products/",
+					"host": [
+						"Localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nexsys",
+						"v1",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/nexsys/v1/categories/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nexsys",
+						"v1",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/nexsys/v1/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nexsys",
+						"v1",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
